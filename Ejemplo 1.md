@@ -47,16 +47,16 @@ Consultas
    #### Solución
    select marca, modelo, kilometraje from automovil where anio <= 2023;
    #### Salida
-   ++
+   
    | marca  | modelo  | kilometraje |
-   ----------------------------------
+   |--------|---------|-------------|
    | Toyota | Corolla | 67921       |
    | Nissan | Versa   | 63456       |
    | Nissan | Versa   | 83456       |
    | Honda  | City    | 49832       |
    | Toyota | Corolla | 97921       |
       
-5. Listado de vehículos que el kilometraje sea mayor a 5000 y menor a 65000, incluye los datos de modelo, anio y kilometraje.
+6. Listado de vehículos que el kilometraje sea mayor a 5000 y menor a 65000, incluye los datos de modelo, anio y kilometraje.
    #### Solución
    select modelo, anio, kilometraje from automovil where 5000 > kilometraje < 65000;
    #### Salida
@@ -74,7 +74,7 @@ Consultas
    | Corolla | 2021 | 97921       |
 
 
-6. Listado de vehículos que corresponde verificación en septiembre-octubre, incluye los datos de marca, municipio y placa.
+7. Listado de vehículos que corresponde verificación en septiembre-octubre, incluye los datos de marca, municipio y placa.
    #### Solución
    select marca, municipio, placa from automovil where (select substr(placa, 6)) < 5;
    #### Salida
