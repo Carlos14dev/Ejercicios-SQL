@@ -25,7 +25,7 @@ Consultas
    #### Salida
 
    | marca  | municipio  | placa   |
-   ---------------------------------
+   |--------|------------|---------|
    | Honda  | Tulancingo | HJC124E |
    | Toyota | Actopan    | HJC133E |
    | Honda  | Tulancingo | HJC223E |
@@ -37,7 +37,7 @@ Consultas
    #### Salida
 
    | placa   | pasajero | modelo  | anio |
-   ---------------------------------------
+   |---------|----------|---------|------|
    | HJC125E |        3 | Corolla | 2023 |
    | HJC133E |        5 | Corolla | 2024 |
    | HJC223E |        3 | Corolla | 2021 |
@@ -62,7 +62,7 @@ Consultas
    #### Salida
    
    | modelo  | anio | kilometraje |
-   --------------------------------
+   |---------|------|-------------|
    | Versa   | 2024 | 43456       |
    | City    | 2025 | 9832        |
    | Corolla | 2023 | 67921       |
@@ -80,7 +80,7 @@ Consultas
    #### Salida
    
    | marca  | municipio  | placa   |
-   ---------------------------------
+   |--------|------------|---------|
    | Nissan | Pachuca    | HJC123E |
    | Honda  | Tulancingo | HJC124E |
    | Honda  | Tulancingo | HJC133E |
