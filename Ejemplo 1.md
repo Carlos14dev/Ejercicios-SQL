@@ -23,47 +23,46 @@ Consultas
    #### Solución
    Tselect marca, municipio, placa from automovil where pasajero > 4;
    #### Salida
-   +--------+------------+---------+
+
    | marca  | municipio  | placa   |
-   +--------+------------+---------+
+   ---------------------------------
    | Honda  | Tulancingo | HJC124E |
    | Toyota | Actopan    | HJC133E |
    | Honda  | Tulancingo | HJC223E |
-   +--------+------------+---------+
+   
    
 3. Listado de vehículos que trabajan en el Actopan, incluye los datos de placa, pasajero, modelo y anio.
    #### Solución
    select placa, pasajero, modelo, anio from Automovil where municipio = 'Actopan';
    #### Salida
-   +---------+----------+---------+------+
+
    | placa   | pasajero | modelo  | anio |
-   +---------+----------+---------+------+
+   ---------------------------------------
    | HJC125E |        3 | Corolla | 2023 |
    | HJC133E |        5 | Corolla | 2024 |
    | HJC223E |        3 | Corolla | 2021 |
-   +---------+----------+---------+------+
+   
    
 4. Listado de vehículos cuyo año de inicio de operación sea menor o igual a 2023, incluye los datos de marca, modelo y kilometraje.
    #### Solución
    select marca, modelo, kilometraje from automovil where anio <= 2023;
    #### Salida
-   +--------+---------+-------------+
+   ++
    | marca  | modelo  | kilometraje |
-   +--------+---------+-------------+
+   ----------------------------------
    | Toyota | Corolla | 67921       |
    | Nissan | Versa   | 63456       |
    | Nissan | Versa   | 83456       |
    | Honda  | City    | 49832       |
    | Toyota | Corolla | 97921       |
-   +--------+---------+-------------+
-   
+      
 5. Listado de vehículos que el kilometraje sea mayor a 5000 y menor a 65000, incluye los datos de modelo, anio y kilometraje.
    #### Solución
    select modelo, anio, kilometraje from automovil where 5000 > kilometraje < 65000;
    #### Salida
-   +---------+------+-------------+
+   
    | modelo  | anio | kilometraje |
-   +---------+------+-------------+
+   --------------------------------
    | Versa   | 2024 | 43456       |
    | City    | 2025 | 9832        |
    | Corolla | 2023 | 67921       |
@@ -73,15 +72,15 @@ Consultas
    | Versa   | 2022 | 83456       |
    | City    | 2023 | 49832       |
    | Corolla | 2021 | 97921       |
-   +---------+------+-------------+
+
 
 6. Listado de vehículos que corresponde verificación en septiembre-octubre, incluye los datos de marca, municipio y placa.
    #### Solución
    select marca, municipio, placa from automovil where (select substr(placa, 6)) < 5;
    #### Salida
-   +--------+------------+---------+
+   
    | marca  | municipio  | placa   |
-   +--------+------------+---------+
+   ---------------------------------
    | Nissan | Pachuca    | HJC123E |
    | Honda  | Tulancingo | HJC124E |
    | Honda  | Tulancingo | HJC133E |
@@ -89,4 +88,3 @@ Consultas
    | Nissan | Pachuca    | HJC223E |
    | Honda  | Tulancingo | HJC223E |
    | Toyota | Actopan    | HJC223E |
-   +--------+------------+---------+
